@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Sentry Example</title>
+
+    <script
+      src="https://js.sentry-cdn.com/<KEY>.min.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      Sentry.onLoad(() => {
+        Sentry.init({
+          release: '1.0.0',
+          environment: 'sentry-example',
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
